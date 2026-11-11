@@ -1,0 +1,10 @@
+Telugu {"gpt": {"loss": 1.713, "perplexity": 5.55, "bits_per_char": 0.5301}, "unigram": {"loss": 6.4664, "perplexity": 643.18, "bits_per_char": 2.001}, "bigram": {"loss": 3.4171, "perplexity": 30.48, "bits_per_char": 1.0574}}
+Nepali {"gpt": {"loss": 4.2028, "perplexity": 66.87, "bits_per_char": 1.6967}, "unigram": {"loss": 7.5907, "perplexity": 1979.66, "bits_per_char": 3.0644}, "bigram": {"loss": 6.0765, "perplexity": 435.51, "bits_per_char": 2.4531}}
+| Language | Model | Test loss | Perplexity | Bits/char |
+|---|---|---|---|---|
+| Telugu | Unigram | 6.4664 | 643.18 | 2.001 |
+| Telugu | Bigram | 3.4171 | 30.48 | 1.0574 |
+| Telugu | GPT (17.3M) | 1.713 | 5.55 | 0.5301 |
+| Nepali | Unigram | 7.5907 | 1979.66 | 3.0644 |
+| Nepali | Bigram | 6.0765 | 435.51 | 2.4531 |
+| Nepali | GPT (17.3M) | 4.2028 | 66.87 | 1.6967 |

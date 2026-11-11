@@ -1,0 +1,622 @@
+  te.test      207 articles     1,642 lines     0.8 MB
+  te.val       207 articles     1,548 lines     0.8 MB
+  te.train  20,288 articles   183,575 lines    88.9 MB
+  ne.test      267 articles     2,039 lines     1.3 MB
+  ne.val       267 articles     1,892 lines     1.2 MB
+  ne.train  26,194 articles   143,527 lines    85.6 MB
+stats -> C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\data\stats.json
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_4000
+  model_type: UNIGRAM
+  vocab_size: 4000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4253 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 183311 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 264 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=33315543
+trainer_interface.cc(552) LOG(INFO) Done: 99.9508% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=104
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999508
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 183311 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=19624041
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 685995 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 183311
+trainer_interface.cc(611) LOG(INFO) Done! 367732
+unigram_model_trainer.cc(602) LOG(INFO) Using 367732 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=193958 obj=13.3169 num_tokens=805597 num_tokens/piece=4.15346
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169425 obj=10.1575 num_tokens=812060 num_tokens/piece=4.79304
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126978 obj=10.1553 num_tokens=845788 num_tokens/piece=6.6609
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126569 obj=10.1287 num_tokens=845980 num_tokens/piece=6.68394
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=94920 obj=10.2081 num_tokens=892859 num_tokens/piece=9.40644
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94905 obj=10.1842 num_tokens=892989 num_tokens/piece=9.40929
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71178 obj=10.2905 num_tokens=942218 num_tokens/piece=13.2375
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71176 obj=10.2656 num_tokens=942276 num_tokens/piece=13.2387
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53382 obj=10.3898 num_tokens=992141 num_tokens/piece=18.5857
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53382 obj=10.3645 num_tokens=992343 num_tokens/piece=18.5895
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40035 obj=10.5078 num_tokens=1042613 num_tokens/piece=26.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40035 obj=10.4814 num_tokens=1042763 num_tokens/piece=26.0463
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30026 obj=10.6415 num_tokens=1093238 num_tokens/piece=36.4097
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30026 obj=10.6144 num_tokens=1093371 num_tokens/piece=36.4141
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22519 obj=10.7963 num_tokens=1144736 num_tokens/piece=50.8342
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22519 obj=10.7622 num_tokens=1145031 num_tokens/piece=50.8473
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=16889 obj=10.9705 num_tokens=1200983 num_tokens/piece=71.1104
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=16889 obj=10.9306 num_tokens=1201089 num_tokens/piece=71.1166
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=12666 obj=11.1642 num_tokens=1258847 num_tokens/piece=99.3879
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=12666 obj=11.1191 num_tokens=1258843 num_tokens/piece=99.3876
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=9499 obj=11.3856 num_tokens=1319911 num_tokens/piece=138.953
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=9499 obj=11.3343 num_tokens=1320006 num_tokens/piece=138.963
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=7124 obj=11.6257 num_tokens=1388024 num_tokens/piece=194.838
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=7124 obj=11.5686 num_tokens=1388293 num_tokens/piece=194.875
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=5343 obj=11.8961 num_tokens=1457067 num_tokens/piece=272.706
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=5343 obj=11.8318 num_tokens=1457136 num_tokens/piece=272.719
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=4400 obj=12.0618 num_tokens=1507448 num_tokens/piece=342.602
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=4400 obj=12.0168 num_tokens=1507487 num_tokens/piece=342.611
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_4000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_4000.vocab
+te vocab=4000   tokens/word=1.73   chars/token=4.377  unk=0.000762
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_8000
+  model_type: UNIGRAM
+  vocab_size: 8000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4253 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 183311 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 264 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=33315543
+trainer_interface.cc(552) LOG(INFO) Done: 99.9508% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=104
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999508
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 183311 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=19624041
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 685995 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 183311
+trainer_interface.cc(611) LOG(INFO) Done! 367732
+unigram_model_trainer.cc(602) LOG(INFO) Using 367732 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=193958 obj=13.3169 num_tokens=805597 num_tokens/piece=4.15346
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169425 obj=10.1575 num_tokens=812060 num_tokens/piece=4.79304
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126978 obj=10.1553 num_tokens=845788 num_tokens/piece=6.6609
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126569 obj=10.1287 num_tokens=845980 num_tokens/piece=6.68394
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=94920 obj=10.2081 num_tokens=892859 num_tokens/piece=9.40644
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94905 obj=10.1842 num_tokens=892989 num_tokens/piece=9.40929
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71178 obj=10.2905 num_tokens=942218 num_tokens/piece=13.2375
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71176 obj=10.2656 num_tokens=942276 num_tokens/piece=13.2387
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53382 obj=10.3898 num_tokens=992141 num_tokens/piece=18.5857
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53382 obj=10.3645 num_tokens=992343 num_tokens/piece=18.5895
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40035 obj=10.5078 num_tokens=1042613 num_tokens/piece=26.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40035 obj=10.4814 num_tokens=1042763 num_tokens/piece=26.0463
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30026 obj=10.6415 num_tokens=1093238 num_tokens/piece=36.4097
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30026 obj=10.6144 num_tokens=1093371 num_tokens/piece=36.4141
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22519 obj=10.7963 num_tokens=1144736 num_tokens/piece=50.8342
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22519 obj=10.7622 num_tokens=1145031 num_tokens/piece=50.8473
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=16889 obj=10.9705 num_tokens=1200983 num_tokens/piece=71.1104
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=16889 obj=10.9306 num_tokens=1201089 num_tokens/piece=71.1166
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=12666 obj=11.1642 num_tokens=1258847 num_tokens/piece=99.3879
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=12666 obj=11.1191 num_tokens=1258843 num_tokens/piece=99.3876
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=9499 obj=11.3856 num_tokens=1319911 num_tokens/piece=138.953
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=9499 obj=11.3343 num_tokens=1320006 num_tokens/piece=138.963
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=8800 obj=11.4017 num_tokens=1338007 num_tokens/piece=152.046
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=8800 obj=11.3885 num_tokens=1338266 num_tokens/piece=152.076
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_8000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_8000.vocab
+te vocab=8000   tokens/word=1.62   chars/token=4.677  unk=0.000814
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_16000
+  model_type: UNIGRAM
+  vocab_size: 16000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_te_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4253 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 183311 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 264 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=33315543
+trainer_interface.cc(552) LOG(INFO) Done: 99.9508% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=104
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999508
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 183311 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=19624041
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 685995 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 183311
+trainer_interface.cc(611) LOG(INFO) Done! 367732
+unigram_model_trainer.cc(602) LOG(INFO) Using 367732 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=193958 obj=13.3169 num_tokens=805597 num_tokens/piece=4.15346
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169425 obj=10.1575 num_tokens=812060 num_tokens/piece=4.79304
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126978 obj=10.1553 num_tokens=845788 num_tokens/piece=6.6609
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126569 obj=10.1287 num_tokens=845980 num_tokens/piece=6.68394
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=94920 obj=10.2081 num_tokens=892859 num_tokens/piece=9.40644
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94905 obj=10.1842 num_tokens=892989 num_tokens/piece=9.40929
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71178 obj=10.2905 num_tokens=942218 num_tokens/piece=13.2375
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71176 obj=10.2656 num_tokens=942276 num_tokens/piece=13.2387
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53382 obj=10.3898 num_tokens=992141 num_tokens/piece=18.5857
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53382 obj=10.3645 num_tokens=992343 num_tokens/piece=18.5895
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40035 obj=10.5078 num_tokens=1042613 num_tokens/piece=26.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40035 obj=10.4814 num_tokens=1042763 num_tokens/piece=26.0463
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30026 obj=10.6415 num_tokens=1093238 num_tokens/piece=36.4097
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30026 obj=10.6144 num_tokens=1093371 num_tokens/piece=36.4141
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22519 obj=10.7963 num_tokens=1144736 num_tokens/piece=50.8342
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22519 obj=10.7622 num_tokens=1145031 num_tokens/piece=50.8473
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=17600 obj=10.9365 num_tokens=1192930 num_tokens/piece=67.7801
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=17600 obj=10.9033 num_tokens=1193034 num_tokens/piece=67.786
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_16000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\te_16000.vocab
+te vocab=16000  tokens/word=1.539  chars/token=4.921  unk=0.000856
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_4000
+  model_type: UNIGRAM
+  vocab_size: 4000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4476 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 142896 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 631 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=30903787
+trainer_interface.cc(552) LOG(INFO) Done: 99.9511% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=148
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999511
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 142896 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=15496930
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 642458 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 142896
+trainer_interface.cc(611) LOG(INFO) Done! 464248
+unigram_model_trainer.cc(602) LOG(INFO) Using 464248 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=202019 obj=13.3559 num_tokens=1012089 num_tokens/piece=5.00987
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169284 obj=10.9735 num_tokens=1017672 num_tokens/piece=6.01163
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126909 obj=10.9275 num_tokens=1053516 num_tokens/piece=8.30135
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126677 obj=10.905 num_tokens=1054630 num_tokens/piece=8.32535
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=95000 obj=10.9773 num_tokens=1106551 num_tokens/piece=11.6479
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94984 obj=10.9585 num_tokens=1107056 num_tokens/piece=11.6552
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71237 obj=11.0578 num_tokens=1163700 num_tokens/piece=16.3356
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71237 obj=11.0353 num_tokens=1163765 num_tokens/piece=16.3365
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53427 obj=11.1623 num_tokens=1222964 num_tokens/piece=22.8904
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53427 obj=11.137 num_tokens=1222960 num_tokens/piece=22.8903
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40069 obj=11.2858 num_tokens=1283865 num_tokens/piece=32.0414
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40069 obj=11.2565 num_tokens=1283909 num_tokens/piece=32.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30051 obj=11.4362 num_tokens=1345472 num_tokens/piece=44.773
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30051 obj=11.4009 num_tokens=1345552 num_tokens/piece=44.7756
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22538 obj=11.6096 num_tokens=1409076 num_tokens/piece=62.52
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22538 obj=11.5677 num_tokens=1409164 num_tokens/piece=62.5239
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=16903 obj=11.8104 num_tokens=1475769 num_tokens/piece=87.3081
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=16903 obj=11.7605 num_tokens=1475882 num_tokens/piece=87.3148
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=12677 obj=12.0466 num_tokens=1548708 num_tokens/piece=122.167
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=12677 obj=11.9864 num_tokens=1548985 num_tokens/piece=122.189
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=9507 obj=12.3175 num_tokens=1625587 num_tokens/piece=170.988
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=9507 obj=12.2462 num_tokens=1625741 num_tokens/piece=171.005
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=7130 obj=12.6227 num_tokens=1705659 num_tokens/piece=239.223
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=7130 obj=12.542 num_tokens=1705766 num_tokens/piece=239.238
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=5347 obj=12.9788 num_tokens=1787527 num_tokens/piece=334.305
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=5347 obj=12.8827 num_tokens=1787678 num_tokens/piece=334.333
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=4400 obj=13.2019 num_tokens=1846392 num_tokens/piece=419.635
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=4400 obj=13.1326 num_tokens=1846564 num_tokens/piece=419.674
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_4000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_4000.vocab
+ne vocab=4000   tokens/word=2.112  chars/token=3.138  unk=0.004624
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_8000
+  model_type: UNIGRAM
+  vocab_size: 8000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4476 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 142896 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 631 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=30903787
+trainer_interface.cc(552) LOG(INFO) Done: 99.9511% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=148
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999511
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 142896 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=15496930
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 642458 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 142896
+trainer_interface.cc(611) LOG(INFO) Done! 464248
+unigram_model_trainer.cc(602) LOG(INFO) Using 464248 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=202019 obj=13.3559 num_tokens=1012089 num_tokens/piece=5.00987
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169284 obj=10.9735 num_tokens=1017672 num_tokens/piece=6.01163
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126909 obj=10.9275 num_tokens=1053516 num_tokens/piece=8.30135
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126677 obj=10.905 num_tokens=1054630 num_tokens/piece=8.32535
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=95000 obj=10.9773 num_tokens=1106551 num_tokens/piece=11.6479
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94984 obj=10.9585 num_tokens=1107056 num_tokens/piece=11.6552
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71237 obj=11.0578 num_tokens=1163700 num_tokens/piece=16.3356
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71237 obj=11.0353 num_tokens=1163765 num_tokens/piece=16.3365
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53427 obj=11.1623 num_tokens=1222964 num_tokens/piece=22.8904
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53427 obj=11.137 num_tokens=1222960 num_tokens/piece=22.8903
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40069 obj=11.2858 num_tokens=1283865 num_tokens/piece=32.0414
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40069 obj=11.2565 num_tokens=1283909 num_tokens/piece=32.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30051 obj=11.4362 num_tokens=1345472 num_tokens/piece=44.773
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30051 obj=11.4009 num_tokens=1345552 num_tokens/piece=44.7756
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22538 obj=11.6096 num_tokens=1409076 num_tokens/piece=62.52
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22538 obj=11.5677 num_tokens=1409164 num_tokens/piece=62.5239
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=16903 obj=11.8104 num_tokens=1475769 num_tokens/piece=87.3081
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=16903 obj=11.7605 num_tokens=1475882 num_tokens/piece=87.3148
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=12677 obj=12.0466 num_tokens=1548708 num_tokens/piece=122.167
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=12677 obj=11.9864 num_tokens=1548985 num_tokens/piece=122.189
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=9507 obj=12.3175 num_tokens=1625587 num_tokens/piece=170.988
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=9507 obj=12.2462 num_tokens=1625741 num_tokens/piece=171.005
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=8800 obj=12.3349 num_tokens=1647411 num_tokens/piece=187.206
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=8800 obj=12.3167 num_tokens=1647492 num_tokens/piece=187.215
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_8000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_8000.vocab
+ne vocab=8000   tokens/word=1.851  chars/token=3.58   unk=0.005276
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+  input_format: 
+  model_prefix: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_16000
+  model_type: UNIGRAM
+  vocab_size: 16000
+  self_test_sample_size: 0
+  character_coverage: 0.9995
+  input_sentence_size: 1000000
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 4
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 0
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(355) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(186) LOG(INFO) Loading corpus: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\_ne_train.txt
+trainer_interface.cc(382) LOG(WARNING) Found too long line (4476 > 4192).
+trainer_interface.cc(384) LOG(WARNING) Too long lines are skipped in the training.
+trainer_interface.cc(385) LOG(WARNING) The maximum length can be changed with --max_sentence_length=<size> flag.
+trainer_interface.cc(411) LOG(INFO) Loaded all 142896 sentences
+trainer_interface.cc(418) LOG(INFO) Skipped 631 too long sentences.
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(427) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(432) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(541) LOG(INFO) all chars count=30903787
+trainer_interface.cc(552) LOG(INFO) Done: 99.9511% characters are covered.
+trainer_interface.cc(562) LOG(INFO) Alphabet size=148
+trainer_interface.cc(563) LOG(INFO) Final character coverage=0.999511
+trainer_interface.cc(594) LOG(INFO) Done! preprocessed 142896 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=15496930
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 642458 seed sentencepieces
+trainer_interface.cc(600) LOG(INFO) Tokenizing input sentences with whitespace: 142896
+trainer_interface.cc(611) LOG(INFO) Done! 464248
+unigram_model_trainer.cc(602) LOG(INFO) Using 464248 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=202019 obj=13.3559 num_tokens=1012089 num_tokens/piece=5.00987
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=169284 obj=10.9735 num_tokens=1017672 num_tokens/piece=6.01163
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=126909 obj=10.9275 num_tokens=1053516 num_tokens/piece=8.30135
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=126677 obj=10.905 num_tokens=1054630 num_tokens/piece=8.32535
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=95000 obj=10.9773 num_tokens=1106551 num_tokens/piece=11.6479
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=94984 obj=10.9585 num_tokens=1107056 num_tokens/piece=11.6552
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=71237 obj=11.0578 num_tokens=1163700 num_tokens/piece=16.3356
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=71237 obj=11.0353 num_tokens=1163765 num_tokens/piece=16.3365
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=53427 obj=11.1623 num_tokens=1222964 num_tokens/piece=22.8904
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=53427 obj=11.137 num_tokens=1222960 num_tokens/piece=22.8903
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=40069 obj=11.2858 num_tokens=1283865 num_tokens/piece=32.0414
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=40069 obj=11.2565 num_tokens=1283909 num_tokens/piece=32.0425
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=30051 obj=11.4362 num_tokens=1345472 num_tokens/piece=44.773
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=30051 obj=11.4009 num_tokens=1345552 num_tokens/piece=44.7756
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=22538 obj=11.6096 num_tokens=1409076 num_tokens/piece=62.52
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=22538 obj=11.5677 num_tokens=1409164 num_tokens/piece=62.5239
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=17600 obj=11.7731 num_tokens=1465492 num_tokens/piece=83.2666
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=17600 obj=11.7317 num_tokens=1465593 num_tokens/piece=83.2723
+trainer_interface.cc(689) LOG(INFO) Saving model: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_16000.model
+trainer_interface.cc(701) LOG(INFO) Saving vocabs: C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\tokenizers\ne_16000.vocab
+ne vocab=16000  tokens/word=1.689  chars/token=3.924  unk=0.005782
+-> C:\Users\yoges\OneDrive\Desktop\resume projects\telugu-nepali-lm\results\tokenizer_comparison.json
+te.train: 7,544,907 tokens
+te.val: 64,821 tokens
+te.test: 65,339 tokens
+ne.train: 8,236,693 tokens
+ne.val: 112,094 tokens
+ne.test: 140,343 tokens

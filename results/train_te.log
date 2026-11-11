@@ -1,184 +1,304 @@
 te: 17.33M params, device=cuda, bf16=True
-train tokens=9,444,741  tokens/iter=32,768  epochs=10.4
-iter     0 | val loss 9.0964 ppl  8923.26 |      2s
-iter     0 | train loss 9.0868 | lr 3.00e-06
-iter    20 | train loss 7.8506 | lr 6.30e-05
-iter    40 | train loss 6.6409 | lr 1.23e-04
-iter    60 | train loss 5.6024 | lr 1.83e-04
-iter    80 | train loss 5.1271 | lr 2.43e-04
-iter   100 | val loss 3.7907 ppl    44.29 |     55s
-iter   100 | train loss 4.0957 | lr 3.03e-04
-iter   120 | train loss 4.2366 | lr 3.63e-04
-iter   140 | train loss 3.8984 | lr 4.23e-04
-iter   160 | train loss 3.4380 | lr 4.83e-04
-iter   180 | train loss 3.1900 | lr 5.43e-04
-iter   200 | val loss 2.7239 ppl    15.24 |    108s
-iter   200 | train loss 3.1363 | lr 6.00e-04
-iter   220 | train loss 3.3251 | lr 6.00e-04
-iter   240 | train loss 2.8750 | lr 6.00e-04
-iter   260 | train loss 2.8489 | lr 5.99e-04
-iter   280 | train loss 2.8438 | lr 5.99e-04
-iter   300 | val loss 2.3304 ppl    10.28 |    199s
-iter   300 | train loss 3.2850 | lr 5.98e-04
-iter   320 | train loss 3.5611 | lr 5.98e-04
-iter   340 | train loss 2.6024 | lr 5.97e-04
-iter   360 | train loss 2.9359 | lr 5.96e-04
-iter   380 | train loss 2.8178 | lr 5.95e-04
-iter   400 | val loss 2.1837 ppl     8.88 |    290s
-iter   400 | train loss 2.4763 | lr 5.93e-04
-iter   420 | train loss 2.7074 | lr 5.92e-04
-iter   440 | train loss 2.7990 | lr 5.90e-04
-iter   460 | train loss 2.8815 | lr 5.89e-04
-iter   480 | train loss 2.8104 | lr 5.87e-04
-iter   500 | val loss 2.0699 ppl     7.92 |    382s
-iter   500 | train loss 2.7734 | lr 5.85e-04
-iter   520 | train loss 2.5365 | lr 5.83e-04
-iter   540 | train loss 2.6419 | lr 5.81e-04
-iter   560 | train loss 2.5156 | lr 5.78e-04
-iter   580 | train loss 2.4741 | lr 5.76e-04
-iter   600 | val loss 1.9027 ppl     6.70 |    489s
-iter   600 | train loss 2.4612 | lr 5.73e-04
-iter   620 | train loss 2.3907 | lr 5.71e-04
-iter   640 | train loss 2.3806 | lr 5.68e-04
-iter   660 | train loss 2.6319 | lr 5.65e-04
-iter   680 | train loss 2.2322 | lr 5.62e-04
-iter   700 | val loss 1.8381 ppl     6.28 |    602s
-iter   700 | train loss 2.4862 | lr 5.59e-04
-iter   720 | train loss 2.3554 | lr 5.55e-04
-iter   740 | train loss 2.0600 | lr 5.52e-04
-iter   760 | train loss 2.2770 | lr 5.48e-04
-iter   780 | train loss 2.4393 | lr 5.45e-04
-iter   800 | val loss 1.7372 ppl     5.68 |    713s
-iter   800 | train loss 2.2658 | lr 5.41e-04
-iter   820 | train loss 2.2787 | lr 5.37e-04
-iter   840 | train loss 2.5833 | lr 5.33e-04
-iter   860 | train loss 2.3505 | lr 5.29e-04
-iter   880 | train loss 2.4901 | lr 5.25e-04
-iter   900 | val loss 1.7381 ppl     5.69 |    833s
-iter   900 | train loss 2.3954 | lr 5.21e-04
-iter   920 | train loss 1.9320 | lr 5.17e-04
-iter   940 | train loss 2.4717 | lr 5.12e-04
-iter   960 | train loss 2.0329 | lr 5.08e-04
-iter   980 | train loss 2.1479 | lr 5.03e-04
-iter  1000 | val loss 1.7782 ppl     5.92 |    956s
-iter  1000 | train loss 1.9721 | lr 4.98e-04
-iter  1020 | train loss 2.1111 | lr 4.94e-04
-iter  1040 | train loss 2.2389 | lr 4.89e-04
-iter  1060 | train loss 2.3336 | lr 4.84e-04
-iter  1080 | train loss 2.0936 | lr 4.79e-04
-iter  1100 | val loss 1.6595 ppl     5.26 |   1074s
-iter  1100 | train loss 2.4243 | lr 4.74e-04
-iter  1120 | train loss 2.0157 | lr 4.68e-04
-iter  1140 | train loss 2.1601 | lr 4.63e-04
-iter  1160 | train loss 1.7828 | lr 4.58e-04
-iter  1180 | train loss 1.9656 | lr 4.53e-04
-iter  1200 | val loss 1.6676 ppl     5.30 |   1197s
-iter  1200 | train loss 2.3923 | lr 4.47e-04
-iter  1220 | train loss 2.1989 | lr 4.42e-04
-iter  1240 | train loss 2.2483 | lr 4.36e-04
-iter  1260 | train loss 2.0136 | lr 4.31e-04
-iter  1280 | train loss 2.0727 | lr 4.25e-04
-iter  1300 | val loss 1.7012 ppl     5.48 |   1319s
-iter  1300 | train loss 2.1545 | lr 4.19e-04
-iter  1320 | train loss 2.1922 | lr 4.13e-04
-iter  1340 | train loss 1.8564 | lr 4.08e-04
-iter  1360 | train loss 2.2547 | lr 4.02e-04
-iter  1380 | train loss 2.1893 | lr 3.96e-04
-iter  1400 | val loss 1.6224 ppl     5.07 |   1435s
-iter  1400 | train loss 1.8566 | lr 3.90e-04
-iter  1420 | train loss 2.1555 | lr 3.84e-04
-iter  1440 | train loss 1.9227 | lr 3.78e-04
-iter  1460 | train loss 1.9494 | lr 3.72e-04
-iter  1480 | train loss 2.0845 | lr 3.66e-04
-iter  1500 | val loss 1.5350 ppl     4.64 |   1488s
-iter  1500 | train loss 2.3610 | lr 3.60e-04
-iter  1520 | train loss 1.9456 | lr 3.54e-04
-iter  1540 | train loss 2.2528 | lr 3.48e-04
-iter  1560 | train loss 1.9197 | lr 3.42e-04
-iter  1580 | train loss 1.8519 | lr 3.36e-04
-iter  1600 | val loss 1.5696 ppl     4.80 |   1541s
-iter  1600 | train loss 2.1364 | lr 3.30e-04
-iter  1620 | train loss 2.0259 | lr 3.24e-04
-iter  1640 | train loss 2.1905 | lr 3.18e-04
-iter  1660 | train loss 2.0281 | lr 3.12e-04
-iter  1680 | train loss 2.1995 | lr 3.06e-04
-iter  1700 | val loss 1.7199 ppl     5.58 |   1594s
-iter  1700 | train loss 2.2389 | lr 3.00e-04
-iter  1720 | train loss 2.0740 | lr 2.94e-04
-iter  1740 | train loss 1.8384 | lr 2.88e-04
-iter  1760 | train loss 2.1273 | lr 2.82e-04
-iter  1780 | train loss 1.9940 | lr 2.76e-04
-iter  1800 | val loss 1.6194 ppl     5.05 |   1647s
-iter  1800 | train loss 1.9249 | lr 2.70e-04
-iter  1820 | train loss 2.0101 | lr 2.64e-04
-iter  1840 | train loss 2.3492 | lr 2.58e-04
-iter  1860 | train loss 2.1124 | lr 2.52e-04
-iter  1880 | train loss 2.1629 | lr 2.47e-04
-iter  1900 | val loss 1.5839 ppl     4.87 |   1700s
-iter  1900 | train loss 1.9497 | lr 2.41e-04
-iter  1920 | train loss 1.8631 | lr 2.35e-04
-iter  1940 | train loss 1.9032 | lr 2.29e-04
-iter  1960 | train loss 1.6988 | lr 2.24e-04
-iter  1980 | train loss 1.7821 | lr 2.18e-04
-iter  2000 | val loss 1.5457 ppl     4.69 |   1753s
-iter  2000 | train loss 2.2368 | lr 2.13e-04
-iter  2020 | train loss 2.0568 | lr 2.07e-04
-iter  2040 | train loss 2.0225 | lr 2.02e-04
-iter  2060 | train loss 2.1708 | lr 1.97e-04
-iter  2080 | train loss 2.0057 | lr 1.92e-04
-iter  2100 | val loss 1.4815 ppl     4.40 |   1806s
-iter  2100 | train loss 1.9565 | lr 1.86e-04
-iter  2120 | train loss 1.6647 | lr 1.81e-04
-iter  2140 | train loss 2.0853 | lr 1.76e-04
-iter  2160 | train loss 1.9557 | lr 1.71e-04
-iter  2180 | train loss 2.2083 | lr 1.66e-04
-iter  2200 | val loss 1.4656 ppl     4.33 |   1860s
-iter  2200 | train loss 1.9531 | lr 1.62e-04
-iter  2220 | train loss 1.7693 | lr 1.57e-04
-iter  2240 | train loss 1.9636 | lr 1.52e-04
-iter  2260 | train loss 1.9901 | lr 1.48e-04
-iter  2280 | train loss 2.0434 | lr 1.43e-04
-iter  2300 | val loss 1.4935 ppl     4.45 |   1913s
-iter  2300 | train loss 2.0089 | lr 1.39e-04
-iter  2320 | train loss 1.9964 | lr 1.35e-04
-iter  2340 | train loss 1.9971 | lr 1.31e-04
-iter  2360 | train loss 1.6617 | lr 1.27e-04
-iter  2380 | train loss 1.9088 | lr 1.23e-04
-iter  2400 | val loss 1.5610 ppl     4.76 |   1965s
-iter  2400 | train loss 1.6749 | lr 1.19e-04
-iter  2420 | train loss 2.0802 | lr 1.15e-04
-iter  2440 | train loss 2.0124 | lr 1.12e-04
-iter  2460 | train loss 1.7132 | lr 1.08e-04
-iter  2480 | train loss 2.0364 | lr 1.05e-04
-iter  2500 | val loss 1.4573 ppl     4.29 |   2018s
-iter  2500 | train loss 1.8262 | lr 1.01e-04
-iter  2520 | train loss 1.7549 | lr 9.82e-05
-iter  2540 | train loss 1.8825 | lr 9.52e-05
-iter  2560 | train loss 1.9088 | lr 9.22e-05
-iter  2580 | train loss 1.9276 | lr 8.94e-05
-iter  2600 | val loss 1.5148 ppl     4.55 |   2071s
-iter  2600 | train loss 1.8876 | lr 8.67e-05
-iter  2620 | train loss 2.1035 | lr 8.42e-05
-iter  2640 | train loss 1.6964 | lr 8.17e-05
-iter  2660 | train loss 1.6464 | lr 7.94e-05
-iter  2680 | train loss 1.8570 | lr 7.72e-05
-iter  2700 | val loss 1.4598 ppl     4.31 |   2124s
-iter  2700 | train loss 1.8808 | lr 7.52e-05
-iter  2720 | train loss 1.9251 | lr 7.32e-05
-iter  2740 | train loss 1.8716 | lr 7.14e-05
-iter  2760 | train loss 1.7598 | lr 6.97e-05
-iter  2780 | train loss 1.9623 | lr 6.82e-05
-iter  2800 | val loss 1.4987 ppl     4.48 |   2177s
-iter  2800 | train loss 1.9157 | lr 6.68e-05
-iter  2820 | train loss 1.6539 | lr 6.55e-05
-iter  2840 | train loss 1.8575 | lr 6.43e-05
-iter  2860 | train loss 1.7696 | lr 6.33e-05
-iter  2880 | train loss 1.8109 | lr 6.24e-05
-iter  2900 | val loss 1.4989 ppl     4.48 |   2230s
-iter  2900 | train loss 2.0639 | lr 6.17e-05
-iter  2920 | train loss 1.8377 | lr 6.11e-05
-iter  2940 | train loss 1.9098 | lr 6.06e-05
-iter  2960 | train loss 1.9455 | lr 6.03e-05
-iter  2980 | train loss 1.8630 | lr 6.01e-05
-iter  3000 | val loss 1.5165 ppl     4.56 |   2284s
-done. best val loss 1.4573 (ppl 4.29)
+train tokens=7,544,907  tokens/iter=32,768  epochs=21.7
+iter     0 | val loss 9.1034 ppl  8985.54 |      3s
+iter     0 | train loss 9.0918 | lr 3.00e-06
+iter    20 | train loss 7.8277 | lr 6.30e-05
+iter    40 | train loss 6.7800 | lr 1.23e-04
+iter    60 | train loss 5.8737 | lr 1.83e-04
+iter    80 | train loss 5.0504 | lr 2.43e-04
+iter   100 | val loss 3.9981 ppl    54.50 |     56s
+iter   100 | train loss 4.9853 | lr 3.03e-04
+iter   120 | train loss 4.8188 | lr 3.63e-04
+iter   140 | train loss 4.0999 | lr 4.23e-04
+iter   160 | train loss 4.2129 | lr 4.83e-04
+iter   180 | train loss 3.9375 | lr 5.43e-04
+iter   200 | val loss 2.9549 ppl    19.20 |    109s
+iter   200 | train loss 3.7269 | lr 6.00e-04
+iter   220 | train loss 3.7604 | lr 6.00e-04
+iter   240 | train loss 3.4706 | lr 6.00e-04
+iter   260 | train loss 3.4033 | lr 6.00e-04
+iter   280 | train loss 3.1559 | lr 6.00e-04
+iter   300 | val loss 2.5584 ppl    12.91 |    162s
+iter   300 | train loss 3.1904 | lr 5.99e-04
+iter   320 | train loss 3.5479 | lr 5.99e-04
+iter   340 | train loss 3.2620 | lr 5.99e-04
+iter   360 | train loss 3.2820 | lr 5.99e-04
+iter   380 | train loss 3.3008 | lr 5.98e-04
+iter   400 | val loss 2.4033 ppl    11.06 |    216s
+iter   400 | train loss 3.0404 | lr 5.98e-04
+iter   420 | train loss 2.9246 | lr 5.97e-04
+iter   440 | train loss 2.8638 | lr 5.97e-04
+iter   460 | train loss 3.1408 | lr 5.96e-04
+iter   480 | train loss 3.1389 | lr 5.95e-04
+iter   500 | val loss 2.3172 ppl    10.15 |    269s
+iter   500 | train loss 3.2569 | lr 5.95e-04
+iter   520 | train loss 2.9852 | lr 5.94e-04
+iter   540 | train loss 2.8573 | lr 5.93e-04
+iter   560 | train loss 2.7418 | lr 5.93e-04
+iter   580 | train loss 2.6582 | lr 5.92e-04
+iter   600 | val loss 2.2453 ppl     9.44 |    322s
+iter   600 | train loss 2.9695 | lr 5.91e-04
+iter   620 | train loss 2.6806 | lr 5.90e-04
+iter   640 | train loss 2.7187 | lr 5.89e-04
+iter   660 | train loss 2.6414 | lr 5.88e-04
+iter   680 | train loss 2.6363 | lr 5.87e-04
+iter   700 | val loss 2.1451 ppl     8.54 |    375s
+iter   700 | train loss 2.6391 | lr 5.86e-04
+iter   720 | train loss 2.8165 | lr 5.85e-04
+iter   740 | train loss 2.8815 | lr 5.83e-04
+iter   760 | train loss 2.8395 | lr 5.82e-04
+iter   780 | train loss 2.4923 | lr 5.81e-04
+iter   800 | val loss 2.0797 ppl     8.00 |    428s
+iter   800 | train loss 2.8459 | lr 5.79e-04
+iter   820 | train loss 2.6448 | lr 5.78e-04
+iter   840 | train loss 2.9386 | lr 5.77e-04
+iter   860 | train loss 2.7580 | lr 5.75e-04
+iter   880 | train loss 2.7905 | lr 5.74e-04
+iter   900 | val loss 2.0892 ppl     8.08 |    481s
+iter   900 | train loss 2.9879 | lr 5.72e-04
+iter   920 | train loss 2.5746 | lr 5.71e-04
+iter   940 | train loss 2.6348 | lr 5.69e-04
+iter   960 | train loss 2.6203 | lr 5.67e-04
+iter   980 | train loss 2.4097 | lr 5.66e-04
+iter  1000 | val loss 1.9866 ppl     7.29 |    535s
+iter  1000 | train loss 2.5713 | lr 5.64e-04
+iter  1020 | train loss 2.6497 | lr 5.62e-04
+iter  1040 | train loss 2.5394 | lr 5.60e-04
+iter  1060 | train loss 2.5330 | lr 5.58e-04
+iter  1080 | train loss 2.3192 | lr 5.56e-04
+iter  1100 | val loss 1.9521 ppl     7.04 |    588s
+iter  1100 | train loss 2.7674 | lr 5.54e-04
+iter  1120 | train loss 2.6570 | lr 5.53e-04
+iter  1140 | train loss 2.3152 | lr 5.50e-04
+iter  1160 | train loss 2.5696 | lr 5.48e-04
+iter  1180 | train loss 2.6571 | lr 5.46e-04
+iter  1200 | val loss 1.9304 ppl     6.89 |    641s
+iter  1200 | train loss 2.6760 | lr 5.44e-04
+iter  1220 | train loss 2.6568 | lr 5.42e-04
+iter  1240 | train loss 2.3821 | lr 5.40e-04
+iter  1260 | train loss 2.2337 | lr 5.38e-04
+iter  1280 | train loss 2.2084 | lr 5.35e-04
+iter  1300 | val loss 1.9435 ppl     6.98 |    694s
+iter  1300 | train loss 2.3033 | lr 5.33e-04
+iter  1320 | train loss 2.5031 | lr 5.31e-04
+iter  1340 | train loss 2.4110 | lr 5.28e-04
+iter  1360 | train loss 2.4645 | lr 5.26e-04
+iter  1380 | train loss 2.5054 | lr 5.23e-04
+iter  1400 | val loss 1.8488 ppl     6.35 |    748s
+iter  1400 | train loss 2.3149 | lr 5.21e-04
+iter  1420 | train loss 2.2892 | lr 5.18e-04
+iter  1440 | train loss 2.4772 | lr 5.16e-04
+iter  1460 | train loss 2.2158 | lr 5.13e-04
+iter  1480 | train loss 2.1038 | lr 5.11e-04
+iter  1500 | val loss 1.9163 ppl     6.80 |    801s
+iter  1500 | train loss 2.2367 | lr 5.08e-04
+iter  1520 | train loss 2.6992 | lr 5.05e-04
+iter  1540 | train loss 2.2468 | lr 5.03e-04
+iter  1560 | train loss 2.1739 | lr 5.00e-04
+iter  1580 | train loss 2.2042 | lr 4.97e-04
+iter  1600 | val loss 1.7478 ppl     5.74 |    854s
+iter  1600 | train loss 2.1001 | lr 4.94e-04
+iter  1620 | train loss 2.3512 | lr 4.92e-04
+iter  1640 | train loss 2.2249 | lr 4.89e-04
+iter  1660 | train loss 2.2103 | lr 4.86e-04
+iter  1680 | train loss 2.3694 | lr 4.83e-04
+iter  1700 | val loss 1.8830 ppl     6.57 |    908s
+iter  1700 | train loss 2.1519 | lr 4.80e-04
+iter  1720 | train loss 2.4179 | lr 4.77e-04
+iter  1740 | train loss 2.2073 | lr 4.74e-04
+iter  1760 | train loss 2.0840 | lr 4.71e-04
+iter  1780 | train loss 2.2575 | lr 4.68e-04
+iter  1800 | val loss 1.8333 ppl     6.25 |    961s
+iter  1800 | train loss 2.1121 | lr 4.65e-04
+iter  1820 | train loss 2.3486 | lr 4.62e-04
+iter  1840 | train loss 2.4222 | lr 4.59e-04
+iter  1860 | train loss 2.1023 | lr 4.56e-04
+iter  1880 | train loss 2.0433 | lr 4.53e-04
+iter  1900 | val loss 1.7047 ppl     5.50 |   1014s
+iter  1900 | train loss 1.9793 | lr 4.49e-04
+iter  1920 | train loss 2.1989 | lr 4.46e-04
+iter  1940 | train loss 2.3856 | lr 4.43e-04
+iter  1960 | train loss 2.2394 | lr 4.40e-04
+iter  1980 | train loss 2.4820 | lr 4.37e-04
+iter  2000 | val loss 1.8031 ppl     6.07 |   1068s
+iter  2000 | train loss 2.0638 | lr 4.33e-04
+iter  2020 | train loss 2.1852 | lr 4.30e-04
+iter  2040 | train loss 2.2645 | lr 4.27e-04
+iter  2060 | train loss 2.2416 | lr 4.23e-04
+iter  2080 | train loss 1.9313 | lr 4.20e-04
+iter  2100 | val loss 1.8907 ppl     6.62 |   1121s
+iter  2100 | train loss 2.3950 | lr 4.17e-04
+iter  2120 | train loss 2.2078 | lr 4.13e-04
+iter  2140 | train loss 2.4912 | lr 4.10e-04
+iter  2160 | train loss 2.3529 | lr 4.07e-04
+iter  2180 | train loss 2.1633 | lr 4.03e-04
+iter  2200 | val loss 1.8011 ppl     6.06 |   1174s
+iter  2200 | train loss 2.1992 | lr 4.00e-04
+iter  2220 | train loss 2.2600 | lr 3.96e-04
+iter  2240 | train loss 2.1349 | lr 3.93e-04
+iter  2260 | train loss 1.9576 | lr 3.90e-04
+iter  2280 | train loss 2.1730 | lr 3.86e-04
+iter  2300 | val loss 1.7112 ppl     5.54 |   1228s
+iter  2300 | train loss 2.2121 | lr 3.83e-04
+iter  2320 | train loss 2.1417 | lr 3.79e-04
+iter  2340 | train loss 2.1511 | lr 3.76e-04
+iter  2360 | train loss 2.1566 | lr 3.72e-04
+iter  2380 | train loss 2.1957 | lr 3.69e-04
+iter  2400 | val loss 1.7891 ppl     5.98 |   1281s
+iter  2400 | train loss 2.1066 | lr 3.65e-04
+iter  2420 | train loss 2.3526 | lr 3.62e-04
+iter  2440 | train loss 2.0864 | lr 3.58e-04
+iter  2460 | train loss 2.2902 | lr 3.55e-04
+iter  2480 | train loss 2.0700 | lr 3.51e-04
+iter  2500 | val loss 1.7804 ppl     5.93 |   1334s
+iter  2500 | train loss 1.8067 | lr 3.48e-04
+iter  2520 | train loss 2.1755 | lr 3.44e-04
+iter  2540 | train loss 1.9591 | lr 3.41e-04
+iter  2560 | train loss 2.4332 | lr 3.37e-04
+iter  2580 | train loss 1.8657 | lr 3.34e-04
+iter  2600 | val loss 1.7525 ppl     5.77 |   1388s
+iter  2600 | train loss 2.1509 | lr 3.30e-04
+iter  2620 | train loss 1.8094 | lr 3.26e-04
+iter  2640 | train loss 2.0360 | lr 3.23e-04
+iter  2660 | train loss 2.2042 | lr 3.19e-04
+iter  2680 | train loss 1.8461 | lr 3.16e-04
+iter  2700 | val loss 1.8069 ppl     6.09 |   1441s
+iter  2700 | train loss 2.1252 | lr 3.12e-04
+iter  2720 | train loss 2.0120 | lr 3.09e-04
+iter  2740 | train loss 2.0552 | lr 3.05e-04
+iter  2760 | train loss 2.0030 | lr 3.02e-04
+iter  2780 | train loss 2.1087 | lr 2.98e-04
+iter  2800 | val loss 1.8220 ppl     6.18 |   1494s
+iter  2800 | train loss 2.3383 | lr 2.95e-04
+iter  2820 | train loss 1.9881 | lr 2.91e-04
+iter  2840 | train loss 2.0264 | lr 2.88e-04
+iter  2860 | train loss 2.2437 | lr 2.84e-04
+iter  2880 | train loss 2.1444 | lr 2.81e-04
+iter  2900 | val loss 1.7935 ppl     6.01 |   1548s
+iter  2900 | train loss 2.2679 | lr 2.77e-04
+iter  2920 | train loss 2.4918 | lr 2.74e-04
+iter  2940 | train loss 2.0742 | lr 2.70e-04
+iter  2960 | train loss 1.9447 | lr 2.67e-04
+iter  2980 | train loss 1.9878 | lr 2.64e-04
+iter  3000 | val loss 1.6779 ppl     5.35 |   1601s
+iter  3000 | train loss 1.6951 | lr 2.60e-04
+iter  3020 | train loss 1.9367 | lr 2.57e-04
+iter  3040 | train loss 2.0481 | lr 2.53e-04
+iter  3060 | train loss 2.2083 | lr 2.50e-04
+iter  3080 | train loss 1.9633 | lr 2.47e-04
+iter  3100 | val loss 1.7233 ppl     5.60 |   1654s
+iter  3100 | train loss 1.8823 | lr 2.43e-04
+iter  3120 | train loss 1.8383 | lr 2.40e-04
+iter  3140 | train loss 2.1776 | lr 2.37e-04
+iter  3160 | train loss 2.0217 | lr 2.33e-04
+iter  3180 | train loss 1.9517 | lr 2.30e-04
+iter  3200 | val loss 1.7669 ppl     5.85 |   1707s
+iter  3200 | train loss 1.9409 | lr 2.27e-04
+iter  3220 | train loss 1.9050 | lr 2.23e-04
+iter  3240 | train loss 2.0651 | lr 2.20e-04
+iter  3260 | train loss 1.7624 | lr 2.17e-04
+iter  3280 | train loss 2.0626 | lr 2.14e-04
+iter  3300 | val loss 1.7339 ppl     5.66 |   1761s
+iter  3300 | train loss 2.2552 | lr 2.11e-04
+iter  3320 | train loss 2.0302 | lr 2.07e-04
+iter  3340 | train loss 2.1436 | lr 2.04e-04
+iter  3360 | train loss 2.1912 | lr 2.01e-04
+iter  3380 | train loss 1.9015 | lr 1.98e-04
+iter  3400 | val loss 1.6907 ppl     5.42 |   1814s
+iter  3400 | train loss 1.8805 | lr 1.95e-04
+iter  3420 | train loss 1.9764 | lr 1.92e-04
+iter  3440 | train loss 2.1048 | lr 1.89e-04
+iter  3460 | train loss 1.8208 | lr 1.86e-04
+iter  3480 | train loss 2.1150 | lr 1.83e-04
+iter  3500 | val loss 1.7052 ppl     5.50 |   1867s
+iter  3500 | train loss 1.7574 | lr 1.80e-04
+iter  3520 | train loss 2.0979 | lr 1.77e-04
+iter  3540 | train loss 1.9279 | lr 1.74e-04
+iter  3560 | train loss 1.8715 | lr 1.71e-04
+iter  3580 | train loss 1.9094 | lr 1.68e-04
+iter  3600 | val loss 1.7081 ppl     5.52 |   1920s
+iter  3600 | train loss 1.9861 | lr 1.66e-04
+iter  3620 | train loss 2.0582 | lr 1.63e-04
+iter  3640 | train loss 1.9103 | lr 1.60e-04
+iter  3660 | train loss 1.9417 | lr 1.57e-04
+iter  3680 | train loss 1.7708 | lr 1.55e-04
+iter  3700 | val loss 1.6631 ppl     5.28 |   1973s
+iter  3700 | train loss 2.0076 | lr 1.52e-04
+iter  3720 | train loss 1.9073 | lr 1.49e-04
+iter  3740 | train loss 1.7469 | lr 1.47e-04
+iter  3760 | train loss 1.9404 | lr 1.44e-04
+iter  3780 | train loss 1.8758 | lr 1.42e-04
+iter  3800 | val loss 1.7024 ppl     5.49 |   2027s
+iter  3800 | train loss 2.0234 | lr 1.39e-04
+iter  3820 | train loss 1.8661 | lr 1.37e-04
+iter  3840 | train loss 1.9468 | lr 1.34e-04
+iter  3860 | train loss 1.9644 | lr 1.32e-04
+iter  3880 | train loss 1.7750 | lr 1.29e-04
+iter  3900 | val loss 1.7088 ppl     5.52 |   2080s
+iter  3900 | train loss 1.7286 | lr 1.27e-04
+iter  3920 | train loss 1.7559 | lr 1.25e-04
+iter  3940 | train loss 1.8983 | lr 1.22e-04
+iter  3960 | train loss 1.9822 | lr 1.20e-04
+iter  3980 | train loss 2.0722 | lr 1.18e-04
+iter  4000 | val loss 1.7527 ppl     5.77 |   2133s
+iter  4000 | train loss 1.9625 | lr 1.16e-04
+iter  4020 | train loss 1.8418 | lr 1.14e-04
+iter  4040 | train loss 1.9428 | lr 1.12e-04
+iter  4060 | train loss 1.8325 | lr 1.10e-04
+iter  4080 | train loss 1.7990 | lr 1.07e-04
+iter  4100 | val loss 1.7266 ppl     5.62 |   2187s
+iter  4100 | train loss 1.8808 | lr 1.06e-04
+iter  4120 | train loss 2.1195 | lr 1.04e-04
+iter  4140 | train loss 1.7300 | lr 1.02e-04
+iter  4160 | train loss 1.8608 | lr 9.98e-05
+iter  4180 | train loss 1.8439 | lr 9.80e-05
+iter  4200 | val loss 1.6742 ppl     5.33 |   2240s
+iter  4200 | train loss 1.8166 | lr 9.62e-05
+iter  4220 | train loss 1.7885 | lr 9.44e-05
+iter  4240 | train loss 1.8052 | lr 9.27e-05
+iter  4260 | train loss 1.9275 | lr 9.11e-05
+iter  4280 | train loss 2.1329 | lr 8.94e-05
+iter  4300 | val loss 1.7668 ppl     5.85 |   2293s
+iter  4300 | train loss 2.0491 | lr 8.78e-05
+iter  4320 | train loss 1.8068 | lr 8.63e-05
+iter  4340 | train loss 1.7791 | lr 8.48e-05
+iter  4360 | train loss 1.8731 | lr 8.33e-05
+iter  4380 | train loss 1.7673 | lr 8.19e-05
+iter  4400 | val loss 1.7092 ppl     5.52 |   2346s
+iter  4400 | train loss 1.7217 | lr 8.06e-05
+iter  4420 | train loss 2.0987 | lr 7.92e-05
+iter  4440 | train loss 1.8883 | lr 7.79e-05
+iter  4460 | train loss 1.7639 | lr 7.67e-05
+iter  4480 | train loss 1.8578 | lr 7.55e-05
+iter  4500 | val loss 1.6148 ppl     5.03 |   2399s
+iter  4500 | train loss 1.8130 | lr 7.43e-05
+iter  4520 | train loss 1.7864 | lr 7.32e-05
+iter  4540 | train loss 1.7540 | lr 7.21e-05
+iter  4560 | train loss 1.8140 | lr 7.11e-05
+iter  4580 | train loss 1.7223 | lr 7.01e-05
+iter  4600 | val loss 1.6829 ppl     5.38 |   2453s
+iter  4600 | train loss 1.8439 | lr 6.92e-05
+iter  4620 | train loss 1.9248 | lr 6.83e-05
+iter  4640 | train loss 1.9494 | lr 6.75e-05
+iter  4660 | train loss 2.0092 | lr 6.67e-05
+iter  4680 | train loss 1.8089 | lr 6.59e-05
+iter  4700 | val loss 1.6397 ppl     5.15 |   2506s
+iter  4700 | train loss 1.8226 | lr 6.52e-05
+iter  4720 | train loss 1.9889 | lr 6.45e-05
+iter  4740 | train loss 1.7835 | lr 6.39e-05
+iter  4760 | train loss 1.8503 | lr 6.33e-05
+iter  4780 | train loss 1.6259 | lr 6.28e-05
+iter  4800 | val loss 1.7074 ppl     5.51 |   2559s
+iter  4800 | train loss 1.9659 | lr 6.23e-05
+iter  4820 | train loss 1.8989 | lr 6.19e-05
+iter  4840 | train loss 1.8261 | lr 6.15e-05
+iter  4860 | train loss 1.8558 | lr 6.11e-05
+iter  4880 | train loss 1.8213 | lr 6.08e-05
+iter  4900 | val loss 1.7211 ppl     5.59 |   2612s
+iter  4900 | train loss 1.7944 | lr 6.06e-05
+iter  4920 | train loss 1.7111 | lr 6.04e-05
+iter  4940 | train loss 1.7193 | lr 6.02e-05
+iter  4960 | train loss 1.7285 | lr 6.01e-05
+iter  4980 | train loss 1.8417 | lr 6.00e-05
+iter  5000 | val loss 1.6401 ppl     5.16 |   2665s
+done. best val loss 1.6148 (ppl 5.03)
