@@ -80,6 +80,7 @@ python src/train.py te --max-iters 5000
 python src/train.py ne --max-iters 5000
 python src/evaluate.py
 python src/generate.py te "తెలుగు భాష" --tokens 80
+python app.py                     # local web demo (Gradio) at http://127.0.0.1:7860
 python src/upload_hf.py           # optional: publish to the Hub (needs huggingface-cli login)
 ```
 
