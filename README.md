@@ -2,6 +2,8 @@
 
 Two small GPT-style language models (17.3M parameters each), one for Telugu and one for Nepali, built end to end from raw Wikipedia text: data cleaning, tokenizers, model, training and evaluation. Everything is written from scratch in PyTorch; there are no pretrained weights.
 
+**Models on the Hugging Face Hub:** [telugu-gpt-17m](https://huggingface.co/YogeshNarasimha/telugu-gpt-17m) · [nepali-gpt-17m](https://huggingface.co/YogeshNarasimha/nepali-gpt-17m)
+
 ![Loss curves](results/loss_curves.png)
 
 ## Results
@@ -78,6 +80,7 @@ python src/train.py te --max-iters 5000
 python src/train.py ne --max-iters 5000
 python src/evaluate.py
 python src/generate.py te "తెలుగు భాష" --tokens 80
+python src/upload_hf.py           # optional: publish to the Hub (needs huggingface-cli login)
 ```
 
 `run_pipeline.sh` runs everything from the split onwards. Data and checkpoints are not committed (see `.gitignore`).
