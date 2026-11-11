@@ -1,0 +1,48 @@
+{
+  "te": {
+    "4000": {
+      "tokens": 87722,
+      "words": 51150,
+      "tokens_per_word": 1.715,
+      "chars_per_token": 4.361,
+      "unk_rate": 0.000787
+    },
+    "8000": {
+      "tokens": 82124,
+      "words": 51150,
+      "tokens_per_word": 1.606,
+      "chars_per_token": 4.658,
+      "unk_rate": 0.00084
+    },
+    "16000": {
+      "tokens": 77860,
+      "words": 51150,
+      "tokens_per_word": 1.522,
+      "chars_per_token": 4.913,
+      "unk_rate": 0.000886
+    }
+  },
+  "ne": {
+    "4000": {
+      "tokens": 106142,
+      "words": 56248,
+      "tokens_per_word": 1.887,
+      "chars_per_token": 3.472,
+      "unk_rate": 0.000659
+    },
+    "8000": {
+      "tokens": 93129,
+      "words": 56248,
+      "tokens_per_word": 1.656,
+      "chars_per_token": 3.958,
+      "unk_rate": 0.000752
+    },
+    "16000": {
+      "tokens": 84736,
+      "words": 56248,
+      "tokens_per_word": 1.506,
+      "chars_per_token": 4.35,
+      "unk_rate": 0.000826
+    }
+  }
+}
