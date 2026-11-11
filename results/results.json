@@ -1,0 +1,48 @@
+{
+  "te": {
+    "best_iter": 2500,
+    "test_tokens": 82338,
+    "test_chars": 382543,
+    "bigram_lambda": 0.9,
+    "models": {
+      "gpt": {
+        "loss": 1.6285,
+        "perplexity": 5.1,
+        "bits_per_char": 0.5057
+      },
+      "unigram": {
+        "loss": 6.5229,
+        "perplexity": 680.54,
+        "bits_per_char": 2.0255
+      },
+      "bigram": {
+        "loss": 3.3348,
+        "perplexity": 28.07,
+        "bits_per_char": 1.0355
+      }
+    }
+  },
+  "ne": {
+    "best_iter": 3000,
+    "test_tokens": 93453,
+    "test_chars": 368565,
+    "bigram_lambda": 0.8,
+    "models": {
+      "gpt": {
+        "loss": 3.9111,
+        "perplexity": 49.95,
+        "bits_per_char": 1.4307
+      },
+      "unigram": {
+        "loss": 7.456,
+        "perplexity": 1730.25,
+        "bits_per_char": 2.7274
+      },
+      "bigram": {
+        "loss": 5.6026,
+        "perplexity": 271.12,
+        "bits_per_char": 2.0494
+      }
+    }
+  }
+}
