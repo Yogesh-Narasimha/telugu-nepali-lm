@@ -1,9 +1,11 @@
 """Download Telugu and Nepali Wikipedia text to data/raw/{lang}.txt.
 
 Articles are separated by a blank line so later steps can split by article.
-Newlines inside an article are kept (one paragraph per line).
+Blank lines inside an article are collapsed (one paragraph per line), so a
+blank line always means 'new article'.
 """
 import argparse
+import re
 from pathlib import Path
 
 from datasets import load_dataset
@@ -22,7 +24,7 @@ def download(lang: str, max_bytes: int = MAX_BYTES) -> None:
     written, articles = 0, 0
     with open(out_path, "w", encoding="utf-8", newline="\n") as f:
         for row in ds:
-            text = row["text"].strip()
+            text = re.sub(r"\n\s*\n+", "\n", row["text"].strip())
             if not text:
                 continue
             f.write(text + "\n\n")
