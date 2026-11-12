@@ -68,11 +68,11 @@ SentencePiece Unigram models at 4k, 8k and 16k vocabulary (`src/tokenizer.py`), 
 
 | Vocab | Telugu | Nepali |
 |---|---|---|
-| 4,000 | 1.72 | 1.89 |
-| 8,000 | 1.61 | 1.66 |
-| 16,000 | 1.52 | 1.51 |
+| 4,000 | 1.73 | 2.11 |
+| 8,000 | 1.62 | 1.85 |
+| 16,000 | 1.54 | 1.69 |
 
-I used 8,000 for both: most of the gain, and half the embedding cost of 16k, which matters in a 17M-parameter model. Full numbers are in `results/tokenizer_comparison.json`. The models have no byte fallback, so about 0.08% of test tokens are `<unk>`.
+I used 8,000 for both: most of the gain, and half the embedding cost of 16k, which matters in a 17M-parameter model. Full numbers are in `results/tokenizer_comparison.json`. The tokenizers have no byte fallback, so some test tokens are `<unk>`: about 0.08% for Telugu and about 0.5% for Nepali at 8k. Nepali needs more tokens per word than Telugu at every size, so it gets less text per context window and per parameter.
 
 ## Model
 
