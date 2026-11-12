@@ -71,7 +71,7 @@ facts, and is not suitable for any real-world use. {limit}
 
 EXTRA = {
     "te": "\nTelugu Wikipedia is very regular (many templated articles), so this perplexity reflects an easy domain, not an unusually strong model.",
-    "ne": "\nNepali was still improving when training stopped, so it is undertrained.",
+    "ne": "\nTraining 8,000 steps instead of 5,000 did not improve it, so quality is limited by the small amount of Nepali data.",
 }
 LIMIT = {"te": "The low perplexity is partly due to very regular source text.",
          "ne": "Quality is limited by the small training set (about 8M tokens)."}
