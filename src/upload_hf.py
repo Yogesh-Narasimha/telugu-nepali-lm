@@ -74,7 +74,7 @@ EXTRA = {
     "ne": "\nNepali was still improving when training stopped, so it is undertrained.",
 }
 LIMIT = {"te": "The low perplexity is partly due to very regular source text.",
-         "ne": "It was trained for a fixed 5,000 steps and had not converged."}
+         "ne": "Quality is limited by the small training set (about 8M tokens)."}
 
 
 def main():

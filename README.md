@@ -24,7 +24,7 @@ How to read this:
 - The GPT beats both n-gram baselines by a wide margin in both languages.
 - **Perplexity is per token, and each language has its own tokenizer, so Telugu and Nepali perplexities are not comparable with each other.** Bits per character is the fairer cross-language number.
 - Telugu looks much better than Nepali, but part of that is the data, not the model. Telugu Wikipedia is full of very regular text (village, film and place articles built on shared templates). I capped exact and near-duplicate template lines, but the text is still unusually predictable. Treat the Telugu number as "easy domain", not "better Telugu model".
-- Nepali is still improving at the end of training (best checkpoint at iteration 5000 of 5000), so it is undertrained. Telugu's best checkpoint was at iteration 4500.
+- Nepali's best checkpoint came at iteration 5000 and Telugu's at 4500. I also trained Nepali for 8,000 iterations to check whether more training helps: it did not (best validation loss 3.918 vs 3.908), so the limit is the amount of data (about 8M training tokens), not training time. Logs are in `results/ne_long_log.json`.
 - Test splits are small (about 207 Telugu and 267 Nepali articles), so expect some noise between runs and splits.
 - The models are trained on Wikipedia only. Samples are fluent but often factually wrong, as expected at this size.
 
