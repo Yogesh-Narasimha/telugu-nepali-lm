@@ -4,6 +4,8 @@ Two small GPT-style language models (17.3M parameters each), one for Telugu and 
 
 **Models on the Hugging Face Hub:** [telugu-gpt-17m](https://huggingface.co/YogeshNarasimha/telugu-gpt-17m) · [nepali-gpt-17m](https://huggingface.co/YogeshNarasimha/nepali-gpt-17m)
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Yogesh-Narasimha/telugu-nepali-lm/blob/main/notebooks/demo.ipynb) Try the models in your browser, free, no install.
+
 ![Loss curves](results/loss_curves.png)
 
 ## Results
@@ -80,7 +82,7 @@ python src/train.py te --max-iters 5000
 python src/train.py ne --max-iters 5000
 python src/evaluate.py
 python src/generate.py te "తెలుగు భాష" --tokens 80
-python app.py                     # local web demo (Gradio) at http://127.0.0.1:7860
+python app.py                     # local web demo (or open notebooks/demo.ipynb in Colab) (Gradio) at http://127.0.0.1:7860
 python src/upload_hf.py           # optional: publish to the Hub (needs huggingface-cli login)
 ```
 
