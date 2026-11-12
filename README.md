@@ -32,6 +32,20 @@ How to read this:
 
 Sample generations are in [results/samples_te.txt](results/samples_te.txt) and [results/samples_ne.txt](results/samples_ne.txt).
 
+### Selected samples
+
+Prompt in **bold**, then the model's continuation (50 tokens, temperature 0.6, top-k 40, seed 0). Picked from 8 prompts at 2 temperatures, so they show the model at its best:
+
+- **Nepali:** **काठमाडौं उपत्यका**को मध्यपश्चिमी भागमा अवस्थित छ। यो उपत्यका समुन्द्री सतहबाट करिब २,५५० मिटर (१,९०० फिट) को उचाइमा रहेको छ। …
+- **Nepali:** **नेपाली भाषा** नेपालको एक भाषा हो। यो भाषा नेपाली भाषाभाषीको मातृभाषा हो। …
+- **Telugu:** **హైదరాబాదు**లోను, మేనేజిమెంటు కళాశాల, పాలీటెక్నిక్ లు సిద్ధిపేటలోనూ ఉన్నాయి. సమీప వృత్తి విద్యా శిక్షణ పాఠశాల … ఉన్నాయి. …
+
+The text is grammatical and in the style of Wikipedia, but the facts are wrong (the Kathmandu Valley is not "in the mid-western part"; the Nepali-language sample invents details). Failure modes seen in the same runs:
+
+- **Repetition** on some prompts, especially at low temperature (for example "గోదావరి నది" and "सगरमाथा" repeat the same clause).
+- **Template drift in Telugu**: many prompts slide into the village/school boilerplate that dominates Telugu Wikipedia, even after near-duplicate filtering.
+- **Unknown characters**: rare letters missing from the 8k vocabulary come out as `⁇` (for example the "ఝ" in "ఝార్ఖండ్").
+
 ## Data
 
 Source: `wikimedia/wikipedia` on HuggingFace, snapshot `20231101` (Telugu `te`, Nepali `ne`).
@@ -94,4 +108,5 @@ python src/upload_hf.py           # optional: publish to the Hub (needs huggingf
 - Small models and small data (about 8–9M training tokens each), so they overfit if trained much longer and invent facts.
 - Test sets are small, and the Telugu number is flattered by very regular source text.
 - Near-duplicate filtering uses a simple frequent-word "skeleton" heuristic, not a full MinHash approach.
+- Rare characters missing from the vocabulary are emitted as `<unk>` (shown as `⁇`) because the tokenizers have no byte fallback.
 - Single training run per language, no seed variance reported.
